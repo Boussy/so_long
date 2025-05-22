@@ -10,6 +10,7 @@ SRCS	= so_long.c \
 		  utils/free.c \
 		  utils/ft_mini_printf.c \
 		  utils/utils.c \
+		  utils/string_utils.c \
 		  utils/ft_split.c
 
 OBJS	= $(SRCS:.c=.o)

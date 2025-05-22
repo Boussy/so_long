@@ -6,7 +6,7 @@
 /*   By: bferdjan <bferdjan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 01:13:26 by bferdjan          #+#    #+#             */
-/*   Updated: 2025/05/20 01:23:57 by bferdjan         ###   ########.fr       */
+/*   Updated: 2025/05/22 04:36:30 by bferdjan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ void	parse_map(char *filename, t_game *game)
 		error_exit("Memory allocation error in map parsing.");
 	if (!lines[0])
 	{
-		free(lines); // Free the array when the map is empty
+		free(lines);
 		error_exit("Empty or invalid map.");
 	}
 	game->map = lines;

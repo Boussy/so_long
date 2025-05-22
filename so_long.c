@@ -6,7 +6,7 @@
 /*   By: bferdjan <bferdjan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 01:11:22 by bferdjan          #+#    #+#             */
-/*   Updated: 2025/05/20 01:23:57 by bferdjan         ###   ########.fr       */
+/*   Updated: 2025/05/22 04:36:30 by bferdjan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int	main(int argc, char **argv)
 		write(2, "Error\nUsage: ./so_long map.ber\n", 32);
 		return (1);
 	}
-	// Initialize global game structure to zeros
 	ft_memset(&g_game, 0, sizeof(t_game));
 	parse_map(argv[1], &g_game);
 	validate_map(&g_game);
